@@ -201,7 +201,6 @@ class Lightbox extends Component {
 				{this.renderThumbnails()}
 				{this.renderArrowPrev()}
 				{this.renderArrowNext()}
-				<ScrollLock />
 			</Container>
 		);
 	}

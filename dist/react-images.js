@@ -2,11 +2,11 @@
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('prop-types'), require('react'), require('aphrodite'), require('react-scrolllock'), require('aphrodite/no-important'), require('react-transition-group'), require('react-dom')) :
 	typeof define === 'function' && define.amd ? define(['prop-types', 'react', 'aphrodite', 'react-scrolllock', 'aphrodite/no-important', 'react-transition-group', 'react-dom'], factory) :
 	(global.Lightbox = factory(global.PropTypes,global.React,global.aphrodite,global.ScrollLock,global.aphrodite,global.ReactTransitionGroup,global.ReactDOM));
-}(this, (function (PropTypes,React,aphrodite,ScrollLock,noImportant,reactTransitionGroup,reactDom) { 'use strict';
+}(this, (function (PropTypes,React,aphrodite,reactScrolllock,noImportant,reactTransitionGroup,reactDom) { 'use strict';
 
 PropTypes = PropTypes && PropTypes.hasOwnProperty('default') ? PropTypes['default'] : PropTypes;
 var React__default = 'default' in React ? React['default'] : React;
-ScrollLock = ScrollLock && ScrollLock.hasOwnProperty('default') ? ScrollLock['default'] : ScrollLock;
+reactScrolllock = reactScrolllock && reactScrolllock.hasOwnProperty('default') ? reactScrolllock['default'] : reactScrolllock;
 
 // ==============================
 // THEME
@@ -1150,8 +1150,7 @@ var Lightbox = function (_Component) {
 				),
 				this.renderThumbnails(),
 				this.renderArrowPrev(),
-				this.renderArrowNext(),
-				React__default.createElement(ScrollLock, null)
+				this.renderArrowNext()
 			);
 		}
 	}, {

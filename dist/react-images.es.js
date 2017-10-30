@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Children, Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import ScrollLock from 'react-scrolllock';
+import reactScrolllock from 'react-scrolllock';
 import { StyleSheet as StyleSheet$1, css as css$1 } from 'aphrodite/no-important';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { render } from 'react-dom';
@@ -1148,8 +1148,7 @@ var Lightbox = function (_Component) {
 				),
 				this.renderThumbnails(),
 				this.renderArrowPrev(),
-				this.renderArrowNext(),
-				React.createElement(ScrollLock, null)
+				this.renderArrowNext()
 			);
 		}
 	}, {
